@@ -1,5 +1,5 @@
 # fly.toml app configuration file for AlgoTrader Institutional v2
-app = "algotrader-institutional"
+app = "a99algotrader"
 primary_region = "fra"
 
 [build]
