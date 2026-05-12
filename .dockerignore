@@ -1,0 +1,19 @@
+# Institutional Trading System: Docker Ignore
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.venv
+venv
+env
+.env
+.git
+.github
+.vscode
+data/*.db
+models/ensemble/**/*.joblib
+frontend/dist
+frontend/node_modules
+node_modules
+logs/*.log
+tests/

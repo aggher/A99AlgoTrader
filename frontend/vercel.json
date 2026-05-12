@@ -1,0 +1,7 @@
+{
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "https://algotrader-institutional.fly.dev/api/$1" },
+    { "source": "/ws", "destination": "https://algotrader-institutional.fly.dev/ws" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
