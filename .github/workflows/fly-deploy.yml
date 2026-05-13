@@ -12,6 +12,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: superfly/flyctl-actions/setup-flyctl@master
+      - run: flyctl secrets set TWELVE_DATA_API_KEY="03f4302464464360a05df5f145c4269d" || true
+        env:
+          FLY_API_TOKEN: ${{ secrets.FLY_TOKEN }}
       - run: flyctl deploy --remote-only
         env:
           FLY_API_TOKEN: ${{ secrets.FLY_TOKEN }}
